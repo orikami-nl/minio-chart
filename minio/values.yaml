@@ -293,6 +293,7 @@ gcsgateway:
   replicas: 4
   # credential json file of service account key
   gcsKeyJson: ""
+  gcsKeyJsonSecret: ""
   # Google cloud project-id
   projectId: ""
 
