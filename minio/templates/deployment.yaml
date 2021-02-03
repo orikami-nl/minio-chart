@@ -214,7 +214,7 @@ spec:
                 name: {{ template "minio.secretName" . }}
             {{- if and .Values.gcsgateway.enabled .Values.gcsgateway.gcsKeyJsonSecret }}
             - secret:
-                name: {{} .Values.gcsgateway.gcsKeyJsonSecret }}                    
+                name: {{ .Values.gcsgateway.gcsKeyJsonSecret }}                    
             {{- end }}
         {{- include "minio.tlsKeysVolume" . | indent 8 }}
 {{- end }}
